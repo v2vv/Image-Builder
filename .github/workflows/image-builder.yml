@@ -86,7 +86,7 @@ jobs:
         # Organize files
         sudo mkdir -p /tmp/bin_firmware
         sudo find bin -type f -exec sudo cp {} /tmp/bin_firmware/ \;
-        sudo cp $CONFIG_FILE /tmp/bin_firmware/config
+        sudo cp "$CONFIG_FILE" /tmp/bin_firmware/config
 
     - name: Upload firmware
       uses: actions/upload-artifact@v4
