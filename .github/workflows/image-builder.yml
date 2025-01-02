@@ -5,9 +5,13 @@ on:
   workflow_dispatch:
     inputs:
       setup_tmate:
-        description: "Enable tmate session for debugging"
-        required: false
+        description: "是否启用 tmate 调试会话"
+        required: true
         default: "false"
+        type: choice
+        options:
+          - "true"
+          - "false"
 
 env:
   PROFILE: generic
