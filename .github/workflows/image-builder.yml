@@ -37,7 +37,10 @@ jobs:
       run: |
         ROOT_DIRECTORY=$(basename $DOWNLOAD_URL .tar.xz)
         echo "ROOT_DIRECTORY=/tmp/$ROOT_DIRECTORY" >> $GITHUB_ENV
-
+        
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      
     - name: Modify .config file
       run: |
         CONFIG_FILE="$ROOT_DIRECTORY/.config"
