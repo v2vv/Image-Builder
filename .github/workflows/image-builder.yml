@@ -3,6 +3,11 @@ on:
   push:
     branches: [ "master" ]
   workflow_dispatch:
+    inputs:
+      setup_tmate:
+        description: "Enable tmate session for debugging"
+        required: false
+        default: "false"
 
 env:
   PROFILE: generic
@@ -39,6 +44,7 @@ jobs:
         echo "ROOT_DIRECTORY=/tmp/$ROOT_DIRECTORY" >> $GITHUB_ENV
         
     - name: Setup tmate session
+      if: ${{ inputs.setup_tmate == 'true' }}
       uses: mxschmitt/action-tmate@v3
       
     - name: Modify .config file
