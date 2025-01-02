@@ -14,7 +14,7 @@ on:
           - "false"
 
 env:
-  PROFILE: Default
+  PROFILE: generic
   UCI_CUSTOM_FILE: uci-custom
   PACKAGES_LIST_FILE: packages.list
   PACKAGES_FOLDER: packages
