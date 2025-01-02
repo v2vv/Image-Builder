@@ -10,5 +10,10 @@ luci-i18n-wechatpush-zh-cn
 luci-i18n-wol-zh-cn
 luci-i18n-zerotier-zh-cn
 luci-theme-argon
+luci-app-openclash
+luci-app-alist
+luci-i18n-alist-zh-cn
+luci-app-ddns-go
+luci-i18n-ddns-go-zh-cn
 -automount
 bash
