@@ -1,4 +1,4 @@
-name: ImmortalWrt Arm Image Builder
+name: ImmortalWrt Arm Image Builder 24.10
 on:
   push:
     branches: ["master"]
